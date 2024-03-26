@@ -10,8 +10,7 @@
  * \brief   Builds and stores an RDF data structure
  *
  * \details We needed to have an internal format to store our data and so
- *          chose to create a basic implementation of the <a
- *          href="https://www.w3.org/TR/rdf11-concepts/" target="_blank">RDF
+ *          chose to create a basic implementation of the <a href="https://www.w3.org/TR/rdf11-concepts/" target="_blank">RDF
  *          Spec</a> to create a database.  The main reason for this was that
  *          the transformation to the turtle format, required for the
  *          implementation report, is a recognised transformation target for
