@@ -44,7 +44,7 @@
           },
           {
             "type": "doap:description",
-            "value": "A JSON-LD 1.1 Processor & API for C++"
+            "value": "A JSON-LD 1.1 Processor and API for C++"
           },
           {
             "type": "doap:homepage",
@@ -56,7 +56,11 @@
           },
           {
             "type": "doap:creator",
-            "value": "https://github.com/danpape"
+            "value": "https://github.com/dcdpr"
+          },
+          {
+            "type": "doap:developer",
+            "value": "https://github.com/dcdpr"
           },
           {
             "type": "doap:developer",
@@ -98,7 +102,7 @@
       {
         "id": "https://github.com/danpape",
         "type": "a",
-        "value": "foaf:Person",
+        "value": "foaf:Person, earl:Assertor",
         "properties": [
           {
             "type": "foaf:name",
@@ -106,14 +110,14 @@
           },
           {
             "type": "foaf:homepage",
-            "value": "https://github.com/danpape"
+            "value": "https://github.com/danpape/"
           }
         ]
       },
       {
         "id": "https://github.com/hawkmauk",
         "type": "a",
-        "value": "foaf:Person",
+        "value": "foaf:Person, earl:Assertor",
         "properties": [
           {
             "type": "foaf:name",
@@ -121,7 +125,7 @@
           },
           {
             "type": "foaf:homepage",
-            "value": "https://github.com/hawkmauk"
+            "value": "https://github.com/hawkmauk/"
           }
         ]
       },
@@ -136,7 +140,7 @@
           },
           {
             "type": "foaf:homepage",
-            "value": "https://github.com/dcdpr"
+            "value": "https://github.com/dcdpr/"
           }
         ]
       }
