@@ -127,8 +127,12 @@ void EarlFormatter::format( std::stringstream& ss, RdfData* data, int depth )
                     // obj may already be a namespaced token, so should be output as-is. if not, surround with " and "
                     if(startsWithNamespacePrefix(obj.name, this->namespaces))
                         ss << obj.name;
-                    else
+                    else {
                         ss << '"' << obj.name << '"';
+                        if(obj.name == "A JSON-LD 1.1 Processor and API for C++" ||
+                           obj.name == "A RDF Dataset Canonicalization (RDFC-1.0) Implementation for C++")
+                            ss << "@en";
+                    }
                 }
             } else {
                 if(obj.name.find("http") == 0 && Uri::isAbsolute(obj.name))
@@ -158,7 +162,7 @@ void EarlFormatter::format( std::stringstream& ss, RdfData* data, int depth )
      */
     if(obj.name == "date" || obj.name == "dc:issued") {
         ss.seekp(-3, std::ios_base::end);
-        ss << "^^xsd:dateTime ; ";
+        ss << "^^xsd:dateTime ";
     }
     else if(obj.name == "doap:created") {
         ss.seekp(-3, std::ios_base::end);
